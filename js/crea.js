@@ -56,7 +56,6 @@ $(() => {//logout
         }
         else {
             $('#durataCorso').append('');
-            //(durataCorso > 4) ?  durataCorso = durataCorso%4: <istruzione2>
         }
         $('#durataCorso').val(durataCorso);
 
