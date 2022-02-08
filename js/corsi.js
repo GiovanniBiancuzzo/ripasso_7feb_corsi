@@ -14,7 +14,8 @@ class Corso {
     }
 
     corsoCompleto() {
-        return `Corso ${this.nome} su ${this.titolo} della durata di ${this.durata}`;
+        return `Hai creato un corso "${this.titolo}"(${this.nome}) della durata di ${this.durata} mesi.
+        Gli argomenti trattati saranno: ${this.argomenti}`;
     }
 }
 
