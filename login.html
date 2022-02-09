@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js'
+        integrity='sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB'
+        crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js'
+        integrity='sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13'
+        crossorigin='anonymous'></script>
+
+    <style>
+        #progress {
+            background-color: #508bfc;
+            width: 0;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body class="bg-primary">
+
+    <header
+        class="container bg-white rounded-3 border border-danger d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center align-items-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2 link-dark disabled">Home</a></li>
+            <li><a href="corsi.html" class="nav-link px-2 link-dark disabled">Elenco corsi</a></li>
+            <li><a href="crea.html" class="nav-link px-2 link-dark disabled">Crea un corso</a></li>
+        </ul>
+
+        <button type="button" class="btn btn-outline-primary me-2"><a href="#"
+                class="nav-link link-primary">Login</a></button>
+    </header>
+
+    <main>
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <h4 class="mb-5">Benvenuto</h4>
+
+                            <form>
+                                <div class="form-outline mb-4">
+                                    <input type="email" id="email" placeholder="Email" required
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="email"></label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="password" id="password" placeholder="Password" required
+                                        class="form-control form-control-lg" />
+                                    <label class="form-label" for="password"></label>
+                                </div>
+
+                                <button class="btn btn-primary btn-lg btn-block" type="button"
+                                    id="login">Accedi</button>
+
+                            </form>
+                            <hr class="my-4">
+
+                            <p>Accedendo potrai visitare l'elenco dei corsi e aggiungerne di nuovi.</p>
+                            <br><br>
+                            <div id="progress">&nbsp;</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
