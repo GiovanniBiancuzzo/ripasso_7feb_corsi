@@ -89,7 +89,6 @@ $(() => {//logout
         $('#materia3').val(materia3);
 
         if (convalida == true) {
-            caricamento();
             let sigla = (nomeCorso.slice(0,1)) + nomeCorso.slice(nomeCorso.length-1,nomeCorso.length) //creazione sigla a partire dal nome del corso, prima e ultima lettera del nome del corso
             sigla = sigla.toUpperCase();//sigla resa maiuscola
             let corso = new Corso (sigla, nomeCorso, durataCorso, `${materia1}, ${materia2}, ${materia3}`); //istanziazione della classe Corso con i valori appena inseriti
